@@ -6,73 +6,73 @@
  */
 
 if ( ! function_exists( 'linje_setup' ) ) :
-/**
- * Sets up theme defaults and registers support for various WordPress features.
- *
- * Note that this function is hooked into the after_setup_theme hook, which
- * runs before the init hook. The init hook is too late for some features, such
- * as indicating support for post thumbnails.
- */
-function linje_setup() {
-	/*
-	 * Make theme available for translation.
-	 * Translations can be filed in the /languages/ directory.
-	 * If you're building a theme based on Linje, use a find and replace
-	 * to change 'linje' to the name of your theme in all the template files
-	 */
-	load_theme_textdomain( 'linje', get_template_directory() . '/languages' );
-
-	// Add default posts and comments RSS feed links to head.
-	add_theme_support( 'automatic-feed-links' );
-
-	/*
-	 * Let WordPress manage the document title.
-	 * By adding theme support, we declare that this theme does not use a
-	 * hard-coded <title> tag in the document head, and expect WordPress to
-	 * provide it for us.
-	 */
-	add_theme_support( 'title-tag' );
-
-	/*
-	 * Enable support for Post Thumbnails on posts and pages.
+	/**
+	 * Sets up theme defaults and registers support for various WordPress features.
 	 *
-	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
+	 * Note that this function is hooked into the after_setup_theme hook, which
+	 * runs before the init hook. The init hook is too late for some features, such
+	 * as indicating support for post thumbnails.
 	 */
-	add_theme_support( 'post-thumbnails' );
+	function linje_setup() {
+		/*
+		 * Make theme available for translation.
+		 * Translations can be filed in the /languages/ directory.
+		 * If you're building a theme based on Linje, use a find and replace
+		 * to change 'linje' to the name of your theme in all the template files
+		 */
+		load_theme_textdomain( 'linje', get_template_directory() . '/languages' );
 
-	// This theme uses wp_nav_menu() in one location.
-	register_nav_menus(array(
-		'main_navigation' => esc_html__('Main Navigation', 'linje'),
-		'footer_navigation' => esc_html__('Footer Navigation', 'linje')
-	));
+		// Add default posts and comments RSS feed links to head.
+		add_theme_support( 'automatic-feed-links' );
 
-	/*
-	 * Switch default core markup for search form, comment form, and comments
-	 * to output valid HTML5.
-	 */
-	add_theme_support( 'html5', array(
-		'search-form',
-		'comment-form',
-		'comment-list',
-		'gallery',
-		'caption',
-	) );
+		/*
+		 * Let WordPress manage the document title.
+		 * By adding theme support, we declare that this theme does not use a
+		 * hard-coded <title> tag in the document head, and expect WordPress to
+		 * provide it for us.
+		 */
+		add_theme_support( 'title-tag' );
 
-	/*
-	 * Enable support for Post Formats.
-	 * See http://codex.wordpress.org/Post_Formats
-	 */
-	add_theme_support( 'post-formats', array(
-		'aside',
-		'gallery',
-		'image',
-		'video',
-		'link',
-		'quote'
-	) );
+		/*
+		 * Enable support for Post Thumbnails on posts and pages.
+		 *
+		 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
+		 */
+		add_theme_support( 'post-thumbnails' );
+
+		// This theme uses wp_nav_menu() in one location.
+		register_nav_menus(array(
+			'main_navigation' => esc_html__('Main Navigation', 'linje'),
+			'footer_navigation' => esc_html__('Footer Navigation', 'linje')
+		));
+
+		/*
+		 * Switch default core markup for search form, comment form, and comments
+		 * to output valid HTML5.
+		 */
+		add_theme_support( 'html5', array(
+			'search-form',
+			'comment-form',
+			'comment-list',
+			'gallery',
+			'caption',
+		) );
+
+		/*
+		 * Enable support for Post Formats.
+		 * See http://codex.wordpress.org/Post_Formats
+		 */
+		add_theme_support( 'post-formats', array(
+			'aside',
+			'gallery',
+			'image',
+			'video',
+			'link',
+			'quote'
+		) );
 
 
-}
+	}
 endif; // linje_setup
 add_action( 'after_setup_theme', 'linje_setup' );
 
@@ -119,18 +119,20 @@ add_action( 'wp_enqueue_scripts', 'linje_scripts' );
 /**
  * Add first and last class on nav li's.
  */
-function add_first_and_last($output) {
-	$countMenuItems = wp_get_nav_menu_object( 'main_navigation' );
-	if($countMenuItems->count > 1) {
-		$output = preg_replace('/class="menu-item/', 'class="first-menu-item menu-item', $output, 1);
-		$output = substr_replace($output, 'class="last-menu-item menu-item', strripos($output, 'class="menu-item'), strlen('class="menu-item'));
-		return $output;
-	} else {
-		$output = preg_replace('/class="menu-item/', 'class="first-menu-item menu-item', $output, 1);
-		return $output;
+if ( ! function_exists( 'linje_add_first_and_last' ) ) :
+	function linje_add_first_and_last($output) {
+		$countMenuItems = wp_get_nav_menu_object( 'main_navigation' );
+		if($countMenuItems->count > 1) {
+			$output = preg_replace('/class="menu-item/', 'class="first-menu-item menu-item', $output, 1);
+			$output = substr_replace($output, 'class="last-menu-item menu-item', strripos($output, 'class="menu-item'), strlen('class="menu-item'));
+			return $output;
+		} else {
+			$output = preg_replace('/class="menu-item/', 'class="first-menu-item menu-item', $output, 1);
+			return $output;
+		}
 	}
-}
-add_filter('wp_nav_menu', 'add_first_and_last');
+endif;
+add_filter('wp_nav_menu', 'linje_add_first_and_last');
 
 /**
  * Custom template tags for this theme.
