@@ -1,7 +1,8 @@
 <?php
 
-
-//Google Fonts 
+/*
+ * Props to the BLDR Theme: https://wordpress.org/themes/bldr/
+ * */
 
 function linje_custom_styles($custom) {
 
