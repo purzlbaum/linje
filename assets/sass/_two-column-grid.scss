@@ -1,0 +1,20 @@
+.main_body {
+  @include make-row();
+  .sidebar {
+    @include make-sm-column( 2 );
+}
+  .main_content {
+    @include make-sm-column( 10 );
+}
+  $grid-columns: 10;
+  .item {
+    @include make-row();
+    .avatars {
+      @include make-sm-column( 2 );
+  }
+    .content {
+      @include make-sm-column( 8 );
+  }
+}
+  $grid-columns: 12;
+}

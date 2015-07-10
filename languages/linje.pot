@@ -1,0 +1,384 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Linje\n"
+"POT-Creation-Date: 2015-07-05 14:14+0200\n"
+"PO-Revision-Date: 2015-07-05 14:13+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: 404.php:15
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:19
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+
+#: 404.php:27
+msgid "Most Used Categories"
+msgstr ""
+
+#: 404.php:44
+#, php-format
+msgid "Try looking in the monthly archives. %1$s"
+msgstr ""
+
+#: comments.php:29
+#, php-format
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:38 comments.php:59
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:41 comments.php:62
+msgid "Older Comments"
+msgstr ""
+
+#: comments.php:42 comments.php:63
+msgid "Newer Comments"
+msgstr ""
+
+#: comments.php:75
+msgid "Comments are closed."
+msgstr ""
+
+#: footer.php:16
+msgid "http://wordpress.org/"
+msgstr ""
+
+#: footer.php:16
+#, php-format
+msgid "Proudly powered by %s"
+msgstr ""
+
+#: footer.php:18
+#, php-format
+msgid "Theme: %1$s by %2$s."
+msgstr ""
+
+#: functions.php:45
+msgid "Main Navigation"
+msgstr ""
+
+#: functions.php:46
+msgid "Footer Navigation"
+msgstr ""
+
+#: header.php:23
+msgid "Skip to content"
+msgstr ""
+
+#: inc/customizer.php:31
+msgid "Theme Background Colors"
+msgstr ""
+
+#: inc/customizer.php:34
+msgid "Allows you to customize background colors for Linje."
+msgstr ""
+
+#: inc/customizer.php:55
+msgid "Body Background"
+msgstr ""
+
+#: inc/customizer.php:63
+msgid "Content Background"
+msgstr ""
+
+#: inc/customizer.php:80
+msgid "Theme Text Colors"
+msgstr ""
+
+#: inc/customizer.php:83
+msgid "Allows you to customize colors for Linje."
+msgstr ""
+
+#: inc/customizer.php:96
+msgid "Content Color"
+msgstr ""
+
+#: inc/customizer.php:113
+msgid "Theme Link Colors"
+msgstr ""
+
+#: inc/customizer.php:116
+msgid "Allows you to customize link colors for Linje."
+msgstr ""
+
+#: inc/customizer.php:139
+msgid "Content Link Color"
+msgstr ""
+
+#: inc/customizer.php:147
+msgid "Content Link Color (on hover)"
+msgstr ""
+
+#: inc/customizer.php:165
+msgid "Google Fonts"
+msgstr ""
+
+#: inc/customizer.php:209
+msgid "Select your desired font for the headings."
+msgstr ""
+
+#: inc/customizer.php:222
+msgid "Select your desired font for the body."
+msgstr ""
+
+#: inc/customizer.php:238
+msgid "Post Format Options"
+msgstr ""
+
+#: inc/customizer.php:241
+msgid "Shows/Hides the Post Format Flag."
+msgstr ""
+
+#: inc/customizer.php:250
+msgid "Hide Post Format Flag"
+msgstr ""
+
+#: inc/extras.php:52
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: inc/template-tags.php:23
+msgid "Posts navigation"
+msgstr ""
+
+#: inc/template-tags.php:27
+msgid "Older posts"
+msgstr ""
+
+#: inc/template-tags.php:31
+msgid "Newer posts"
+msgstr ""
+
+#: inc/template-tags.php:56
+msgid "Post navigation"
+msgstr ""
+
+#: inc/template-tags.php:83
+#, php-format
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr ""
+
+#: inc/template-tags.php:88
+#, php-format
+msgctxt "post author"
+msgid "By %s"
+msgstr ""
+
+#: inc/template-tags.php:105 inc/template-tags.php:111
+msgid ", "
+msgstr ""
+
+#: inc/template-tags.php:107
+#, php-format
+msgid "Posted in %1$s"
+msgstr ""
+
+#: inc/template-tags.php:113
+#, php-format
+msgid "Tagged %1$s"
+msgstr ""
+
+#: inc/template-tags.php:127
+msgid "Leave a comment"
+msgstr ""
+
+#: inc/template-tags.php:127
+msgid "1 Comment"
+msgstr ""
+
+#: inc/template-tags.php:127
+msgid "% Comments"
+msgstr ""
+
+#: inc/template-tags.php:138 template-parts/content-page.php:26
+msgid "Edit"
+msgstr ""
+
+#: inc/template-tags.php:155
+#, php-format
+msgid "Category: %s"
+msgstr ""
+
+#: inc/template-tags.php:157
+#, php-format
+msgid "Tag: %s"
+msgstr ""
+
+#: inc/template-tags.php:159
+#, php-format
+msgid "Author: %s"
+msgstr ""
+
+#: inc/template-tags.php:161
+#, php-format
+msgid "Year: %s"
+msgstr ""
+
+#: inc/template-tags.php:161
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr ""
+
+#: inc/template-tags.php:163
+#, php-format
+msgid "Month: %s"
+msgstr ""
+
+#: inc/template-tags.php:163
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr ""
+
+#: inc/template-tags.php:165
+#, php-format
+msgid "Day: %s"
+msgstr ""
+
+#: inc/template-tags.php:165
+msgctxt "daily archives date format"
+msgid "F j, Y"
+msgstr ""
+
+#: inc/template-tags.php:168
+msgctxt "post format archive title"
+msgid "Asides"
+msgstr ""
+
+#: inc/template-tags.php:170
+msgctxt "post format archive title"
+msgid "Galleries"
+msgstr ""
+
+#: inc/template-tags.php:172
+msgctxt "post format archive title"
+msgid "Images"
+msgstr ""
+
+#: inc/template-tags.php:174
+msgctxt "post format archive title"
+msgid "Videos"
+msgstr ""
+
+#: inc/template-tags.php:176
+msgctxt "post format archive title"
+msgid "Quotes"
+msgstr ""
+
+#: inc/template-tags.php:178
+msgctxt "post format archive title"
+msgid "Links"
+msgstr ""
+
+#: inc/template-tags.php:180
+msgctxt "post format archive title"
+msgid "Statuses"
+msgstr ""
+
+#: inc/template-tags.php:182
+msgctxt "post format archive title"
+msgid "Audio"
+msgstr ""
+
+#: inc/template-tags.php:184
+msgctxt "post format archive title"
+msgid "Chats"
+msgstr ""
+
+#: inc/template-tags.php:187
+#, php-format
+msgid "Archives: %s"
+msgstr ""
+
+#: inc/template-tags.php:191
+#, php-format
+msgid "%1$s: %2$s"
+msgstr ""
+
+#: inc/template-tags.php:193
+msgid "Archives"
+msgstr ""
+
+#: search.php:16
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: template-parts/content-gallery.php:21 template-parts/content-link.php:28
+#: template-parts/content-quote.php:21 template-parts/content-video.php:23
+#: template-parts/content.php:30
+#, php-format
+msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: template-parts/content-link.php:35 template-parts/content-page.php:19
+#: template-parts/content-quote.php:28 template-parts/content-single.php:23
+#: template-parts/content-video.php:30 template-parts/content.php:37
+msgid "Pages:"
+msgstr ""
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#: template-parts/content-none.php:20
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/content-none.php:24
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: template-parts/content-none.php:29
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "Linje"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "http://underscores.me/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Simple and clean one column WordPress theme."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Claudio Schwarz"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://www.claudioschwarz.com"
+msgstr ""

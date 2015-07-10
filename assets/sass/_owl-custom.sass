@@ -1,0 +1,23 @@
+.single-image
+  position: relative
+
+.owl-nav
+  cursor: pointer
+
+  .owl-prev,
+  .owl-next
+    background: #000000
+    padding: 5px 12px 5px
+    @include transition(background 0.4s ease)
+    position: absolute
+    bottom: 0
+    line-height: 1
+
+    .fa
+      color: $white
+
+  .owl-prev
+    right: 32px
+
+  .owl-next
+    right: 0

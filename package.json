@@ -1,0 +1,17 @@
+{
+  "name": "linje",
+  "description": "Linje WordPress Theme",
+  "version": "0.1.0",
+  "repository": "https://github.com/purzlbaum/linje",
+  "author": {
+    "name": "Claudio Schwarz",
+    "url": "http://www.claudioschwarz.com/"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-concat": "^0.5.0",
+    "grunt-contrib-sass": "^0.9.2",
+    "grunt-contrib-uglify": "^0.7.0",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}

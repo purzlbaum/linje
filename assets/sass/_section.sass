@@ -1,0 +1,73 @@
+article
+  margin-bottom: 4rem
+  position: relative
+  background: $white
+  @include transition(box-shadow 0.4s ease)
+
+  &:hover
+    @include box-shadow(0px 0px 12px rgba(0, 0, 0, 0.40))
+
+  .inner
+    &.top-container
+      padding: 3.1rem 4rem 0
+
+    &.bottom-container
+      border-top: 1px solid $body-background
+
+      .inner
+        padding: 3.1rem 4rem
+
+  .entry-date,
+  .author
+    font-weight: 700
+
+.full-width-image
+  img
+    @include box-shadow(0px 0px 10px rgba(0, 0, 0, 0.2))
+
+.entry-footer
+  line-height: 1
+  font-size: 1.8rem
+
+  &-right
+    @media (min-width: $screen-sm-min)
+      text-align: right
+
+  &-center
+    margin-top: 3.1rem
+    @media (min-width: $screen-sm-min)
+      text-align: center
+
+.post-format-icon
+  display: none
+
+  @media (min-width: $screen-sm-min)
+    position: absolute
+    background: $white
+    top: 29px
+    left: -44px
+    padding: 6px
+    display: block
+
+.video
+  margin: 0 -4rem
+
+  p,
+  ul,
+  ol
+    padding: 0 4rem
+
+  p.lead
+    padding: 0
+
+.format-link
+  h2
+    .fa
+      font-size: 2.1rem
+
+.gallery
+  margin: 0 -4rem 2rem
+
+  figcaption
+    padding: 0 4rem
+    height: 32px
