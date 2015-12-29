@@ -1,0 +1,56 @@
+.with-sidebar
+  .entry-footer-right
+    @media (min-width: $screen-sm-min)
+      text-align: left
+
+      @media (min-width: $screen-lg-min)
+        text-align: right
+
+aside
+  @include transition(box-shadow 0.4s ease)
+
+  &:hover
+    @include box-shadow(0px 0px 12px rgba(0, 0, 0, 0.40))
+
+.widget
+  background: $white
+  padding: 3.1rem 4rem
+  margin-top: 4rem
+  @include transition(box-shadow 0.4s ease)
+
+  &:hover
+    @include box-shadow(0px 0px 12px rgba(0, 0, 0, 0.40))
+
+  &:first-of-type
+    margin-top: 0
+
+  h3
+    margin-bottom: 1rem
+
+  ul
+    margin: 0
+    padding-left: 3rem
+
+    > li
+      padding-top: 1.5rem
+
+      &:first-of-type
+        padding-top: 0
+
+  .rsswidget img
+    display: none
+
+  caption
+    padding: 0
+
+  table
+    width: 100%
+
+  thead,
+  tbody
+    th,
+    td
+      text-align: center
+
+  .navbar-form
+    padding: 0

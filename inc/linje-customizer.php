@@ -301,26 +301,18 @@ class theme_customizer {
 		<style type="text/css">
 			<?php self::linje_generate_css('body', 'background', 'body_background_color'); ?>
 			<?php self::linje_generate_css('body', 'color', 'text_color'); ?>
-			<?php self::linje_generate_css('article', 'background', 'content_background_color'); ?>
+			<?php self::linje_generate_css('article, aside, .comments-area', 'background', 'content_background_color'); ?>
 			<?php self::linje_generate_css('article a:focus, article a:hover', 'color', 'content_link_color_hover'); ?>
 			<?php
 					echo 'article .inner.bottom-container { border-color: ' . get_theme_mod('body_background_color', '#e8e8e7') . '; }';
 			?>
 			<?php
-					echo 'article a, article .read-more { color: ' . get_theme_mod( 'content_link_color', '#130f30' ) . '; text-shadow: -1px -1px 0 ' . get_theme_mod( 'content_background_color', '#ffffff' ) . ',1px -1px 0 ' . get_theme_mod( 'content_background_color', '#ffffff' ) . ',-1px 1px 0 ' . get_theme_mod( 'content_background_color', '#ffffff' ) . ',1px 1px 0 ' . get_theme_mod( 'content_background_color', '#ffffff' ) . '; background-image: linear-gradient(to top, transparent, transparent 2px, ' . get_theme_mod( 'content_link_color', '#130f30' ) . ' 2px, ' . get_theme_mod( 'content_link_color' ) . ' 3px, transparent 3px); }'
+					echo 'aside a, aside .read-more , article a, article .read-more, .comments-area a, .comments-area .read-more { color: ' . get_theme_mod( 'content_link_color', '#130f30' ) . '; text-shadow: -1px -1px 0 ' . get_theme_mod( 'content_background_color', '#ffffff' ) . ',1px -1px 0 ' . get_theme_mod( 'content_background_color', '#ffffff' ) . ',-1px 1px 0 ' . get_theme_mod( 'content_background_color', '#ffffff' ) . ',1px 1px 0 ' . get_theme_mod( 'content_background_color', '#ffffff' ) . '; background-image: linear-gradient(to top, transparent, transparent 2px, ' . get_theme_mod( 'content_link_color', '#130f30' ) . ' 2px, ' . get_theme_mod( 'content_link_color' ) . ' 3px, transparent 3px); }'
 			?>
 			<?php
 			?>
-			<?php echo 'article a:focus, article a:hover, article .read-more:hover { color: ' . get_theme_mod( 'content_link_color_hover', '#41aee9' ) . '; background-image: linear-gradient(to top, transparent, transparent 2px, ' . get_theme_mod( 'content_link_color_hover', '#41aee9' ) . ' 2px, ' . get_theme_mod( 'content_link_color_hover', '#41aee9' ) . ' 3px, transparent 3px);}'; ?>
+			<?php echo 'aside a:focus, aside a:hover, aside .read-more:hover, article a:focus, article a:hover, article .read-more:hover, .comments-area a:focus, .comments-area a:hover, .comments-area .read-more:hover { color: ' . get_theme_mod( 'content_link_color_hover', '#41aee9' ) . '; background-image: linear-gradient(to top, transparent, transparent 2px, ' . get_theme_mod( 'content_link_color_hover', '#41aee9' ) . ' 2px, ' . get_theme_mod( 'content_link_color_hover', '#41aee9' ) . ' 3px, transparent 3px);}'; ?>
 			<?php echo '.gallery .owl-nav .owl-prev:hover, .gallery .owl-nav .owl-next:hover { background: ' . get_theme_mod( 'content_link_color_hover', '#41aee9' ) . '; }' ?>
-			<?php
-				$example_position = get_theme_mod( 'linje_layout_options' );
-				var_dump($example_position);
-
-				if (get_theme_mod( 'linje_layout_options' )) {
-					echo get_theme_mod( 'linje_layout_options' );
-				}
-            ?>
 			<?php
 				if (get_theme_mod( 'post_format_flags' )) {
 					echo '.post-format-icon { display: none; }';

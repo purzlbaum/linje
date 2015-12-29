@@ -1,6 +1,5 @@
 /*
   Navbar
-
 .navbar-collapse
   @media (min-width: $screen-sm-min)
     padding: 0
@@ -13,8 +12,50 @@
     > li.first-menu-item
       >a
         padding-left: 0
+  .navbar-collapse
+    @media (min-width: $screen-sm-min)
+      border: none
+
+.btn-default
+  height: 44px
+  border-radius: 0
+
+.input-text
+  max-width: 189px
+  border-radius: 0
+
+.form-control
+  border-radius: 0
+  height: 44px
+
+.navbar-form
+  .input-text
+    max-width: 187px
+    border-radius: 0
 
 .dropdown-menu
   border-radius: 0
   border: none
   font-size: 1.8rem
+
+/*
+  With sidebar
+
+.with-sidebar
+  .container
+    @media (min-width: $screen-md-min)
+      width: 900px
+
+    @media (min-width: $screen-lg-min)
+      width: 1120px
+/*
+  Alerts
+
+.alert
+  border-radius: 0
+
+/*
+  Screen readers
+
+.screen-reader-text
+  @extend .sr-only

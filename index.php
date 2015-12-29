@@ -11,37 +11,50 @@
  * @package Linje
  */
 
-get_header(); ?>
+get_header();
 
-	<div id="primary" class="content-area row">
-		<main id="main" class="site-main col-sm-12" role="main">
+if ( get_theme_mod( 'linje_layout_options' ) == 'with-sidebar' ) {
+	$classContent = ' col-sm-8';
+} else {
+	$classContent = ' col-sm-12';
+}
 
-		<?php if ( have_posts() ) : ?>
+?>
+	<div class="row">
+		<div id="primary" class="content-area<?php echo $classContent; ?>">
+			<main id="main" class="site-main" role="main">
 
-			<?php while ( have_posts() ) : the_post(); ?>
+				<?php if ( have_posts() ) : ?>
 
-				<?php
+					<?php while ( have_posts() ) : the_post(); ?>
 
-					/*
-					 * Include the Post-Format-specific template for the content.
-					 * If you want to override this in a child theme, then include a file
-					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-					 */
-					get_template_part( 'template-parts/content', get_post_format() );
-				?>
+						<?php
 
-			<?php endwhile; ?>
+						/*
+						 * Include the Post-Format-specific template for the content.
+						 * If you want to override this in a child theme, then include a file
+						 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
+						 */
+						get_template_part( 'template-parts/content', get_post_format() );
+						?>
 
-			<?php the_posts_navigation(); ?>
+					<?php endwhile; ?>
 
-		<?php else : ?>
+					<?php the_posts_navigation(); ?>
 
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
+				<?php else : ?>
+
+					<?php get_template_part( 'template-parts/content', 'none' ); ?>
+
+				<?php endif; ?>
+
+			</main><!-- #main -->
+		</div>
+		<?php if ( get_theme_mod( 'linje_layout_options' ) == 'with-sidebar' ) : ?>
+
+			<?php get_sidebar(); ?>
 
 		<?php endif; ?>
+	</div>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

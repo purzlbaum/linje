@@ -37,14 +37,8 @@
 	<div class="inner bottom-container">
 		<footer class="entry-footer inner clearfix">
 			<div class="row">
-				<?php if ( 'post' == get_post_type() ) : ?>
-					<div class="entry-footer-left col-sm-6">
-						<?php linje_posted_on(); ?>
-					</div>
-				<?php endif; ?>
-				<div class="entry-footer-right col-sm-6">
-					<?php linje_entry_footer(); ?>
-				</div>
+				<?php linje_posted_on(); ?>
+				<?php linje_entry_footer(); ?>
 				<div class="entry-footer-center col-sm-12">
 					<?php linje_entry_footer_comments(); ?>
 				</div>

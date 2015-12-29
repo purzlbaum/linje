@@ -71,3 +71,33 @@ article
   figcaption
     padding: 0 4rem
     height: 32px
+
+.post-nav
+  padding: 3.1rem 4rem
+  margin-bottom: 4rem
+
+  span
+    display: block
+
+  .meta-nav
+    color: #686868
+    font-size: 1rem
+    letter-spacing: 0.076923077em
+    line-height: 1.6153846154
+    margin-bottom: 0.5384615385em
+    text-transform: uppercase
+
+.comments-area
+  @include transition(box-shadow 0.4s ease)
+  padding: 3.1rem 4rem
+
+  &:hover
+    @include box-shadow(0px 0px 12px rgba(0, 0, 0, 0.40))
+
+.comment-list
+  article
+    &:hover
+    @include box-shadow(none)
+
+.form-submit
+  text-align: right
